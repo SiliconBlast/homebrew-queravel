@@ -1,26 +1,26 @@
 # Homebrew formula for the Queravel CLI (pre-built binary).
 # Rendered by .github/workflows/release-homebrew.yml and pushed to the tap repo
-# SiliconBlast/homebrew-queravel. Placeholders: 0.9.45 675bda45c6ae1eea25412e43b2a86a204f5cd835f6330c52b79ab16a2914c015 203056c5a25e6a13739cf04171f8143a09d2bd8ac195c4cb5d54e87404f7bf07.
+# SiliconBlast/homebrew-queravel. Placeholders: 0.9.46 2fc61f95863117820a562d1a4b6e6a9e11419a263e320a6767bd9c83052e27bd ca4608495ff4309729e6d388f7b7406a095b840242ce0b44936904d9064adcec.
 #
 # Install:  brew install SiliconBlast/queravel/queravel
 class Queravel < Formula
   desc "Agentic coding assistant for the terminal (Claude Code-style)"
   homepage "https://queravel.com"
-  version "0.9.45"
+  version "0.9.46"
 
   on_macos do
     url "https://queravel-backend.fly.dev/api/v1/cli/download/macos/queravel"
-    sha256 "675bda45c6ae1eea25412e43b2a86a204f5cd835f6330c52b79ab16a2914c015"
+    sha256 "2fc61f95863117820a562d1a4b6e6a9e11419a263e320a6767bd9c83052e27bd"
   end
 
   on_linux do
     on_intel do
       url "https://queravel-backend.fly.dev/api/v1/cli/download/linux/queravel"
-      sha256 "203056c5a25e6a13739cf04171f8143a09d2bd8ac195c4cb5d54e87404f7bf07"
+      sha256 "ca4608495ff4309729e6d388f7b7406a095b840242ce0b44936904d9064adcec"
     end
     on_arm do
       url "https://queravel-backend.fly.dev/api/v1/cli/download/linux-arm64/queravel"
-      sha256 "4045ad39d70d391d228ca70bed7397ca9b65b7a5da0f5d5d5c92ecf4a119e7c9"
+      sha256 "7b40f7540432fbc511997d4a508e8dc3e47b4c91b7018392505d0d10cd199cac"
     end
   end
 
